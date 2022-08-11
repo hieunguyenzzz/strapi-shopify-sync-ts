@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "warehouse_items",
+  "info": {
+    "singularName": "warehouse-item",
+    "pluralName": "warehouse-items",
+    "displayName": "Warehouse Item"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "qty": {
+      "type": "integer"
+    },
+    "variant": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::variant.variant"
+    }
+  }
+}
